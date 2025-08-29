@@ -1,0 +1,179 @@
+/* Estilos generales del sitio web */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #dad7cd;
+    color: #000000;
+}
+
+/* Título del encabezado */
+.page-title {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de botones */
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #a3b18a;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los botones */
+.buttons-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #588157;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-container button:hover {
+    background-color: #588157;
+}
+
+/* Estilo para el button donde agrega el usuario el texto */
+#newTitle {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #588157;
+}
+
+/* Contenedor principal de secciones */
+.layout-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.book-details {
+    flex: 1 1 300px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.book-details h2 {
+    border-bottom: 2px solid #344e41; /*linea debajo de texto */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.book-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-details li {
+    margin-bottom: 10px;
+}
+
+.main-content {
+    flex: 2 1 600px;
+}
+
+/* Estilos de secciones */
+section h2 {
+    color: #000000;
+    border-bottom: 2px solid #344e41; /*linea debajo de texto */
+    padding-bottom: 5px;
+}
+
+.book-description p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Contenido del libro */
+.parallel-paragraphs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left-paragraph,
+.right-paragraph {
+    flex: 1 1 45%;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+/* Estilos para el cambio de diseño (columnas a filas) */
+.row-layout {
+    flex-direction: column;
+}
+
+.row-layout .left-paragraph,
+.row-layout .right-paragraph {
+    flex-basis: 100%;
+}
+
+/* Estilos para el nuevo contenedor de la imagen */
+.image-container-wrapper {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Clases para cambiar de color */
+.changed-color-one {
+    color: #490097 !important;
+    /* Rojo */
+    font-family: 'Georgia', serif !important;
+}
+
+.changed-color-two {
+    color: #27ae60 !important;
+    /* Verde */
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+/* Estilos para el menú de imagen */
+.image-menu-wrapper {
+    position: relative;
+}
+
+.image-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
